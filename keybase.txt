@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/nprail
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nprail.me
+  * I am nprail (https://keybase.io/nprail) on keybase.
+  * I have a public key ASBiS6gykI2AScC51nid6Wa-IJ00_jVUdE_mDsY-lX5fpAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120624ba832908d8049c0b9d6789de966be209d34fe3554744fe60ec63e957e5fa40a",
+            "host": "keybase.io",
+            "kid": "0120624ba832908d8049c0b9d6789de966be209d34fe3554744fe60ec63e957e5fa40a",
+            "uid": "6d77e4554c2b1b1980bc68443458b319",
+            "username": "nprail"
+        },
+        "service": {
+            "hostname": "nprail.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1486738277,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1486738251,
+        "hash": "95de02995176e4bfc0692aaf10d5da3660331fd7a834bcb4f9e068a4aea207a85b19f99539ae1b5181e17f9395ef1fee0318f72
+f43d705c59c6cb096530dbcd5",
+        "seqno": 869473
+    },
+    "prev": "fd71c59ef24d4e3eb85325b5a8a985b70288832b33946da70baa3f3cd0ba9f92",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgYkuoMpCNgEnAudZ4nelmviCdNP41VHRP5g7GPpV+X6QKp3BheWxvYWTFAu97ImJvZHkiOnsi
+a2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNjI0YmE4MzI5MDhkODA0OWMwYjlkNjc4OWRlOTY2YmUyMDlkMzRmZTM1NTQ3NDRmZTYwZWM2M2U5NTdlNWZhNDBh
+IiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNjI0YmE4MzI5MDhkODA0OWMwYjlkNjc4OWRlOTY2YmUyMDlkMzRmZTM1NTQ3NDRmZTYwZWM2M2U5
+NTdlNWZhNDBhIiwidWlkIjoiNmQ3N2U0NTU0YzJiMWIxOTgwYmM2ODQ0MzQ1OGIzMTkiLCJ1c2VybmFtZSI6Im5wcmFpbCJ9LCJzZXJ2aWNlIjp7Imhvc3Ru
+YW1lIjoibnByYWlsLm1lIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7
+Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0ODY3MzgyNzcsImV4cGlyZV9pbiI6NTA0NTc2MDAw
+LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4NjczODI1MSwiaGFzaCI6Ijk1ZGUwMjk5NTE3NmU0YmZjMDY5MmFhZjEwZDVkYTM2NjAzMzFmZDdhODM0YmNi
+NGY5ZTA2OGE0YWVhMjA3YTg1YjE5Zjk5NTM5YWUxYjUxODFlMTdmOTM5NWVmMWZlZTAzMThmNzJmNDNkNzA1YzU5YzZjYjA5NjUzMGRiY2Q1Iiwic2Vxbm8i
+Ojg2OTQ3M30sInByZXYiOiJmZDcxYzU5ZWYyNGQ0ZTNlYjg1MzI1YjVhOGE5ODViNzAyODg4MzJiMzM5NDZkYTcwYmFhM2YzY2QwYmE5ZjkyIiwic2Vxbm8i
+OjgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAqo6MZLZWpbH6mZ/0phpGnGsSDXvbuHA95UJdnUBzwkG56b2b0cD2kotfTey9/ST3ld8yOBJ0FbnIOP/C4Qlu
+C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJEQBLE1i55QxfOjgS8M7WoJfAHG07Zi2FJ6W8qDZa/Go3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nprail
+
+==================================================================
