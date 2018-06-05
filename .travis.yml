@@ -1,0 +1,18 @@
+install:
+  - rm -rf public || exit 0
+script:
+  - mkdir .public
+  - cp * .public
+  - mv .public public
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: public
+  target_branch: master
+  github_token: $GITHUB_TOKEN
+  repo: nprail/nprail.github.io
+  on:
+    branch: dev
+branches:
+  only:
+    - dev
