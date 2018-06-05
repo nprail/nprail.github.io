@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import "./themes/green-white.css";
+import './themes/green-white.css'
 // import "./themes/red-white.css";
 // import "./themes/grey-white.css";
 // import "./themes/white-indigo.";
@@ -10,8 +10,8 @@ import "./themes/green-white.css";
 // import "./themes/white-red.css";
 // import "./themes/yellow-black.css";
 
-import App from "./App";
-import registerServiceWorker from "./registerServiceWorker";
+import App from './App'
+import registerServiceWorker from './registerServiceWorker'
 
-ReactDOM.render(<App />, document.getElementById("root"));
-registerServiceWorker();
+ReactDOM.render(<App />, document.getElementById('root'))
+registerServiceWorker()
