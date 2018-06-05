@@ -2,7 +2,7 @@ install:
   - rm -rf public || exit 0
 script:
   - mkdir .public
-  - cp * .public
+  - cp -R * .public
   - mv .public public
 deploy:
   provider: pages
