@@ -1,4 +1,4 @@
-# NPrail.me Website
+# NPrail.me Website [![Build Status](https://travis-ci.org/nprail/nprail.github.io.svg?branch=dev)](https://travis-ci.org/nprail/nprail.github.io)
 
 ## Bugs and Issues
 
