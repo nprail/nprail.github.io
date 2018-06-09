@@ -11,7 +11,7 @@ import './themes/green-white.css'
 // import "./themes/yellow-black.css";
 
 import App from './App'
-import registerServiceWorker from './registerServiceWorker'
+// import registerServiceWorker from './registerServiceWorker'
 
 ReactDOM.render(<App />, document.getElementById('root'))
-registerServiceWorker()
+// registerServiceWorker()
