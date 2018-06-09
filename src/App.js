@@ -4,7 +4,8 @@ import './reset.css'
 import Header from './Header'
 import Icons from './Icons'
 
-const name = 'Noah'
+const firstName = 'Noah'
+const lastName = 'Prail
 const tagline = 'Christian | Filmmaker | Entrepreneur | Developer'
 const icons = [
   { icon: 'github', url: 'https://s.nprail.me/github' },
@@ -17,13 +18,13 @@ const icons = [
   { icon: 'google-plus-g', url: 'https://s.nprail.me/gplus' }
 ]
 
-document.title = `${name} | ${tagline}`
+document.title = `${firstName} ${lastName} - ${tagline}`
 
 class App extends Component {
   render () {
     return (
       <div>
-        <Header name={name} tagline={tagline} />
+        <Header name={firstName} tagline={tagline} />
         <Icons icons={icons} />
       </div>
     )
