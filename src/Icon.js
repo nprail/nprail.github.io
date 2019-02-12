@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 class Icon extends Component {
   render () {
     return (
-      <a target='_blank' rel='noopener' aria-label={this.props.icon} href={this.props.url}>
+      <a target='_blank' rel='noopener noreferrer' aria-label={this.props.icon} href={this.props.url}>
         <i aria-hidden className={`fab fa-${this.props.icon}`} />
       </a>
     )
