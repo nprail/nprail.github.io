@@ -14,8 +14,7 @@ const icons = [
   { icon: 'stack-overflow', url: 'https://s.nprail.me/stackoverflow' },
   { icon: 'linkedin', url: 'https://s.nprail.me/linkedin' },
   { icon: 'medium', url: 'http://s.nprail.me/medium' },
-  { icon: 'instagram', url: 'https://s.nprail.me/instagram' },
-  { icon: 'google-plus-g', url: 'https://s.nprail.me/gplus' }
+  { icon: 'instagram', url: 'https://s.nprail.me/instagram' }
 ]
 
 document.title = `${firstName} ${lastName} - ${tagline}`
