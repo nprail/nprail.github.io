@@ -10,4 +10,4 @@ Have a bug or an issue with this? [Open a new issue](https://github.com/nprail/n
 
 ## Copyright and License
 
-Copyright 2018 Noah Prail. Code released under the MIT license.
+Copyright 2019 Noah Prail. Code released under the [MIT license](LICENSE).
