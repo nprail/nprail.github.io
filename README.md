@@ -1,4 +1,4 @@
-# NPrail.me Website [![Build Status](https://travis-ci.org/nprail/nprail.github.io.svg?branch=dev)](https://travis-ci.org/nprail/nprail.github.io) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/standard/standard)
+# NPrail.dev Website [![Build Status](https://travis-ci.org/nprail/nprail.github.io.svg?branch=dev)](https://travis-ci.org/nprail/nprail.github.io) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/standard/standard)
 
 ## Bugs and Issues
 
