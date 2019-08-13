@@ -26,5 +26,5 @@ jobs:
         git config --global user.email "bot@nprail.dev"
         git config --global user.name "Deploy Bot"
         git init && git add . && git commit -m "Deploy"
-        git remote add origin git@github.com/nprail/nprail.github.io # && git push --force
+        git remote add origin git@github.com/nprail/nprail.github.io && git push --force
         
