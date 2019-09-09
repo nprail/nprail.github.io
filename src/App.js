@@ -6,15 +6,16 @@ import Icons from './Icons'
 
 const firstName = 'Noah'
 const lastName = 'Prail'
-const tagline = 'Christian | Filmmaker | Entrepreneur | Developer'
+const tagline = 'Christian | Entrepreneur | Developer | Filmmaker'
 const icons = [
-  { icon: 'github', url: 'https://s.nprail.me/github' },
+  { icon: 'github', url: 'https://go.nprail.dev/github' },
   { icon: 'gitlab', url: 'https://gitlab.com/nprail' },
-  { icon: 'twitter', url: 'https://s.nprail.me/twitter' },
-  { icon: 'stack-overflow', url: 'https://s.nprail.me/stackoverflow' },
-  { icon: 'linkedin', url: 'https://s.nprail.me/linkedin' },
-  { icon: 'medium', url: 'http://s.nprail.me/medium' },
-  { icon: 'instagram', url: 'https://s.nprail.me/instagram' }
+  { icon: 'twitter', url: 'https://go.nprail.dev/twitter' },
+  { icon: 'stack-overflow', url: 'https://go.nprail.dev/stackoverflow' },
+  { icon: 'linkedin', url: 'https://go.nprail.dev/linkedin' },
+  { icon: 'medium', url: 'http://go.nprail.dev/medium' },
+  { icon: 'instagram', url: 'https://go.nprail.dev/instagram' },
+  { icon: 'keybase', url: 'https://keybase.io/nprail' }
 ]
 
 document.title = `${firstName} ${lastName} - ${tagline}`
