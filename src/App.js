@@ -6,7 +6,7 @@ import Icons from './Icons'
 
 const firstName = 'Noah'
 const lastName = 'Prail'
-const tagline = 'Christian | Entrepreneur | Developer | Filmmaker'
+const tagline = 'Christian | Introvert | Entrepreneur | Developer | Filmmaker'
 const icons = [
   { icon: 'github', url: 'https://go.nprail.dev/github' },
   { icon: 'gitlab', url: 'https://gitlab.com/nprail' },
