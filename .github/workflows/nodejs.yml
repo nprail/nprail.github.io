@@ -11,7 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@master
+    - name: Checkout
+      uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      with:
+        persist-credentials: false
     - name: Use Node.js 10.x
       uses: actions/setup-node@v1
       with:
@@ -21,12 +24,18 @@ jobs:
         npm install
         npm run build
     - name: Deploy GH Pages
-      run: |
-        rm -rf .git && cd build
-        git config --global user.email "bot@nprail.dev"
-        git config --global user.name "Deploy Bot"
-        git init && git add .
-        git commit -m "Deploy to ${GITHUB_REPOSITORY}"
-        git remote add origin https://nprail:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        git push --set-upstream origin master --force
-        
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
+        BRANCH: master # The branch the action should deploy to.
+        FOLDER: build # The folder the action should deploy.
+
+#     - name: Deploy GH Pages
+#       run: |
+#         rm -rf .git && cd build
+#         git config --global user.email "bot@nprail.dev"
+#         git config --global user.name "Deploy Bot"
+#         git init && git add .
+#         git commit -m "Deploy to ${GITHUB_REPOSITORY}"
+#         git remote add origin https://nprail:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+#         git push --set-upstream origin master --force
