@@ -15,7 +15,7 @@ jobs:
     - name: Use Node.js 10.x
       uses: actions/setup-node@v1
       with:
-        version: 10.x
+        node-version: 10.x
     - name: npm install, build
       run: |
         npm install
@@ -25,6 +25,7 @@ jobs:
         rm -rf .git && cd build
         git config --global user.email "bot@nprail.dev"
         git config --global user.name "Deploy Bot"
-        git init && git add . && git commit -m "Deploy to ${GITHUB_REPOSITORY}"
+        git init && git add .
+        git commit -m "Deploy to ${GITHUB_REPOSITORY}"
         git remote add origin https://nprail:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git && git push --set-upstream origin master --force
         
