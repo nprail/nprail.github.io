@@ -13,8 +13,8 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       layouts: "_layouts"
     },
-    templateFormats: ["html", "md", "njk"],
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk"
+    templateFormats: ["html", "md", "hbs", "handlebars"],
+    htmlTemplateEngine: "handlebars",
+    markdownTemplateEngine: "handlebars"
   };
 };
