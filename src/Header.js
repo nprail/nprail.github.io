@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import './Header.css'
 
 class Header extends Component {
   render () {
     return (
       <div>
-        <div className='intro'>Hello, I'm {this.props.name}!</div>
-        <div className='tagline'>{this.props.tagline}</div>
+        <div className='font-header text-intro font-semibold'>
+          Hello, I'm {this.props.name}!
+        </div>
+        <div className='text-2xl my-6 font-light'>
+          {this.props.tagline}
+        </div>
       </div>
     )
   }

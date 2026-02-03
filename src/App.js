@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import './App.css'
-import './reset.css'
 import Header from './Header'
 import Icons from './Icons'
 
@@ -23,10 +21,10 @@ document.title = `${firstName} ${lastName} - ${tagline}`
 class App extends Component {
   render () {
     return (
-      <div>
+      <main className="flex flex-col min-h-screen justify-center px-8 text-center bg-primary-green text-primary-bg">
         <Header name={firstName} tagline={tagline} />
         <Icons icons={icons} />
-      </div>
+      </main>
     )
   }
 }
