@@ -6,7 +6,7 @@ import Icon from './Icon'
 class Icons extends Component {
   render () {
     return (
-      <div className='text-5xl'>
+      <div className='text-5xl'> {/* Social media icons container */}
         {this.props.icons.map(i => (
           <Icon key={i.icon} icon={i.icon} url={i.url} />
         ))}
