@@ -6,6 +6,9 @@ module.exports = function(eleventyConfig) {
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget("src/styles/");
   
+  // Ignore README in images directory
+  eleventyConfig.ignores.add("src/images/README.md");
+  
   return {
     dir: {
       input: "src",
