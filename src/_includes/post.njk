@@ -1,0 +1,15 @@
+---
+layout: base.njk
+---
+<article class="max-w-3xl mx-auto px-6 py-16">
+  <header class="mb-12">
+    <p class="text-sm text-neutral-500 mb-3">{{ displayDate }}</p>
+    <h1 class="text-4xl font-bold tracking-tight leading-tight">{{ title }}</h1>
+  </header>
+  <div class="prose prose-invert prose-lg max-w-none">
+    {{ content | safe }}
+  </div>
+  <div class="mt-12 pt-8 border-t border-neutral-800">
+    <a href="/blog/" class="text-sm text-neutral-400 hover:text-neutral-100 transition-colors">&larr; Back to Blog</a>
+  </div>
+</article>

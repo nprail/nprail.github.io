@@ -1,41 +1,59 @@
-name: Node CI
+name: Build and Deploy
 
-on: 
+on:
   push:
     branches:
-    - dev
+      - main
+      - master
+      - dev
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-      with:
-        persist-credentials: false
-    - name: Use Node.js 10.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 10.x
-    - name: npm install, build
-      run: |
-        npm install
-        npm run build
-    - name: Deploy GH Pages
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}
-        BRANCH: master # The branch the action should deploy to.
-        FOLDER: build # The folder the action should deploy.
+      - name: Checkout
+        uses: actions/checkout@v4
 
-#     - name: Deploy GH Pages
-#       run: |
-#         rm -rf .git && cd build
-#         git config --global user.email "bot@nprail.dev"
-#         git config --global user.name "Deploy Bot"
-#         git init && git add .
-#         git commit -m "Deploy to ${GITHUB_REPOSITORY}"
-#         git remote add origin https://nprail:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-#         git push --set-upstream origin master --force
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download images
+        run: bash scripts/download-images.sh
+
+      - name: Build site
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

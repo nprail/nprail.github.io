@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: Photography
+---
+<section class="max-w-6xl mx-auto px-6 py-24">
+  <div class="flex items-baseline justify-between mb-12">
+    <h1 class="text-5xl font-bold tracking-tight">Photography</h1>
+    <a href="https://go.nprail.dev/instagram" target="_blank" rel="noopener noreferrer" class="text-sm text-neutral-400 hover:text-neutral-100 transition-colors">Instagram &rarr;</a>
+  </div>
+  <p class="text-neutral-400 mb-12">I post most of my photos on Instagram.</p>
+  <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+    {% for photo in photography %}
+    <div class="break-inside-avoid">
+      <img src="{{ photo.url }}" alt="{{ photo.alt }}" class="w-full rounded-sm" loading="lazy">
+    </div>
+    {% endfor %}
+  </div>
+</section>

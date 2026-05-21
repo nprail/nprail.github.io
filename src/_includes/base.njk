@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="min-h-screen bg-neutral-950 text-neutral-100 font-sans">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-neutral-950/90 backdrop-blur-sm border-b border-neutral-800">
+    <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-lg font-semibold tracking-tight hover:text-neutral-300 transition-colors">Noah Prail</a>
+      <ul class="flex items-center gap-8 text-sm text-neutral-400">
+        <li><a href="/" class="hover:text-neutral-100 transition-colors">Work</a></li>
+        <li><a href="/blog/" class="hover:text-neutral-100 transition-colors">Blog</a></li>
+        <li><a href="/about/" class="hover:text-neutral-100 transition-colors">About</a></li>
+        <li><a href="/contact/" class="hover:text-neutral-100 transition-colors">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pt-16">
+    {{ content | safe }}
+  </main>
+  <footer class="border-t border-neutral-800 mt-24 py-8 text-center text-sm text-neutral-600">
+    <p>&copy; 2024 Noah Prail</p>
+  </footer>
+</body>
+</html>
