@@ -1,0 +1,26 @@
+---
+layout: base.njk
+title: Videography
+---
+<section class="max-w-6xl mx-auto px-6 py-24">
+  <div class="flex items-baseline justify-between mb-12">
+    <h1 class="text-5xl font-bold tracking-tight">Videography</h1>
+    <a href="{{ social.youtube }}" target="_blank" rel="noopener noreferrer" class="text-sm text-neutral-400 hover:text-neutral-100 transition-colors">YouTube &rarr;</a>
+  </div>
+  <p class="text-neutral-400 mb-12">You can find more of my videos on YouTube.</p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% for video in videography %}
+    <a href="{{ video.url }}" target="_blank" rel="noopener noreferrer" class="group block bg-neutral-900 rounded-sm overflow-hidden hover:bg-neutral-800 transition-colors">
+      <div class="aspect-video overflow-hidden">
+        <img src="{{ video.thumbnail }}" alt="{{ video.title }}" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy">
+      </div>
+      <div class="p-5">
+        <h2 class="font-semibold mb-2 group-hover:text-neutral-300 transition-colors">{{ video.title }}</h2>
+        {% if video.description %}
+        <p class="text-sm text-neutral-500 leading-relaxed">{{ video.description }}</p>
+        {% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

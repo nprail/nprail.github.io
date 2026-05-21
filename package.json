@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npx @11ty/eleventy && mkdir -p _site/assets/css && npx tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --minify",
-    "dev": "npx @11ty/eleventy --serve",
+    "build": "eleventy && mkdir -p _site/assets/css && tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --minify",
+    "dev": "eleventy --serve",
     "download-images": "bash scripts/download-images.sh"
   },
   "devDependencies": {

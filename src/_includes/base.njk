@@ -22,7 +22,17 @@
   <main class="pt-16">
     {{ content | safe }}
   </main>
-  <footer class="border-t border-neutral-800 mt-24 py-8 text-center text-sm text-neutral-600">
+  <footer class="border-t border-neutral-800 mt-24 py-10 text-center text-sm text-neutral-600">
+    <div class="flex flex-wrap items-center justify-center gap-6 mb-6">
+      <a href="{{ social.github }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-300 transition-colors" aria-label="GitHub">GitHub</a>
+      <a href="{{ social.instagram }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-300 transition-colors" aria-label="Instagram">Instagram</a>
+      <a href="{{ social.youtube }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-300 transition-colors" aria-label="YouTube">YouTube</a>
+      <a href="{{ social.twitter }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-300 transition-colors" aria-label="Twitter">Twitter</a>
+      <a href="{{ social.linkedin }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-300 transition-colors" aria-label="LinkedIn">LinkedIn</a>
+      <a href="{{ social.stackoverflow }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-300 transition-colors" aria-label="Stack Overflow">Stack Overflow</a>
+      <a href="{{ social.medium }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-300 transition-colors" aria-label="Medium">Medium</a>
+      <a href="{{ social.gitlab }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-300 transition-colors" aria-label="GitLab">GitLab</a>
+    </div>
     <p>&copy; 2024 Noah Prail</p>
   </footer>
 </body>
