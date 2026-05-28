@@ -3,20 +3,21 @@ layout: base.njk
 title: Blog
 ---
 <section class="max-w-4xl mx-auto px-6 py-24">
-  <h1 class="text-5xl font-bold tracking-tight mb-16">Blog</h1>
-  <div class="space-y-12">
+  <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 mb-4">Writing</p>
+  <h1 class="text-5xl md:text-6xl font-bold tracking-tighter mb-16">Blog</h1>
+  <div class="space-y-10">
     {% for post in blog %}
-    <article class="flex gap-8 group">
-      <a href="/blog/{{ post.slug }}/" class="flex-shrink-0 w-40 h-28 overflow-hidden rounded-sm bg-neutral-900">
-        <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+    <article class="group">
+      <a href="/blog/{{ post.slug }}/" class="flex gap-6 sm:gap-8 items-start">
+        <div class="flex-shrink-0 w-32 sm:w-44 h-24 sm:h-28 overflow-hidden rounded-lg bg-neutral-900">
+          <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+        </div>
+        <div class="flex-1 min-w-0 py-1">
+          <p class="text-xs text-neutral-500 mb-2 uppercase tracking-widest">{{ post.dateDisplay }}</p>
+          <h2 class="text-lg sm:text-xl font-semibold mb-2 group-hover:text-neutral-300 transition-colors leading-snug">{{ post.title }}</h2>
+          <p class="text-neutral-500 text-sm leading-relaxed line-clamp-2">{{ post.excerpt }}</p>
+        </div>
       </a>
-      <div>
-        <p class="text-xs text-neutral-500 mb-2 uppercase tracking-widest">{{ post.dateDisplay }}</p>
-        <h2 class="text-xl font-semibold mb-3 group-hover:text-neutral-300 transition-colors">
-          <a href="/blog/{{ post.slug }}/">{{ post.title }}</a>
-        </h2>
-        <p class="text-neutral-400 text-sm leading-relaxed">{{ post.excerpt }}</p>
-      </div>
     </article>
     {% endfor %}
   </div>

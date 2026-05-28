@@ -3,19 +3,22 @@ layout: base.njk
 title: Rockets
 ---
 <section class="max-w-6xl mx-auto px-6 py-24">
-  <h1 class="text-5xl font-bold tracking-tight mb-16">Rockets</h1>
+  <div class="mb-14">
+    <p class="text-xs uppercase tracking-[0.3em] text-neutral-500 mb-3">Work</p>
+    <h1 class="text-5xl md:text-6xl font-bold tracking-tighter">Rockets</h1>
+  </div>
   <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
     {% for rocket in rockets %}
-    <figure class="break-inside-avoid">
+    <figure class="break-inside-avoid overflow-hidden rounded-lg">
       {% if rocket.link %}
       <a href="{{ rocket.link }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ rocket.url }}" alt="{{ rocket.alt }}" class="w-full rounded-sm" loading="lazy">
+        <img src="{{ rocket.url }}" alt="{{ rocket.alt }}" class="w-full hover:opacity-90 transition-opacity duration-300" loading="lazy">
       </a>
       {% else %}
-      <img src="{{ rocket.url }}" alt="{{ rocket.alt }}" class="w-full rounded-sm" loading="lazy">
+      <img src="{{ rocket.url }}" alt="{{ rocket.alt }}" class="w-full" loading="lazy">
       {% endif %}
       {% if rocket.caption %}
-      <figcaption class="mt-2 text-sm text-neutral-500 text-center">{{ rocket.caption }}</figcaption>
+      <figcaption class="mt-2 text-sm text-neutral-500 text-center px-2">{{ rocket.caption }}</figcaption>
       {% endif %}
     </figure>
     {% endfor %}
