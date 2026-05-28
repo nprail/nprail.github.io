@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "2017-into-2018",
+    "title": "2017 Into 2018",
+    "date": "2017-12-31",
+    "dateDisplay": "December 31, 2017",
+    "excerpt": "2017 was very much a challenging year (with one of the worst weeks of my life) but also a year of growth for me.",
+    "thumbnail": "/assets/images/blog/2017-into-2018.jpeg"
+  },
+  {
+    "slug": "a-photo-a-day-by-noah-prail",
+    "title": "A Photo A Day by Noah Prail",
+    "date": "2017-01-27",
+    "dateDisplay": "January 27, 2017",
+    "excerpt": "I have decided that I will be taking 1 photo (at least) per day during 2017 and posting them on social media.",
+    "thumbnail": "/assets/images/blog/a-photo-a-day.jpeg"
+  },
+  {
+    "slug": "i-switched-to-ubuntu-and-then-back-to-windows",
+    "title": "I switched to Ubuntu… and then back to Windows.",
+    "date": "2018-07-13",
+    "dateDisplay": "July 13, 2018",
+    "excerpt": "I've grown up using Windows. And I love open source. But in the open-source world, the assumption is almost always that you are running either Linux or macOS.",
+    "thumbnail": "/assets/images/blog/ubuntu-windows.jpg"
+  },
+  {
+    "slug": "microsoft-bought-github-what-does-that-mean-for-gitlab",
+    "title": "Microsoft bought GitHub: What does that mean for GitLab?",
+    "date": "2018-06-04",
+    "dateDisplay": "June 4, 2018",
+    "excerpt": "Will GitHub continue being the king of hosted Git?",
+    "thumbnail": "/assets/images/blog/github-gitlab.jpg"
+  }
+]

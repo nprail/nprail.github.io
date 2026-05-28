@@ -1,33 +1,16 @@
 {
-  "name": "nprail-dev",
-  "version": "0.1.0",
+  "name": "nprail-github-io",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://nprail.dev",
-  "dependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-scripts": "^3.3.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "eleventy && mkdir -p _site/assets/css && tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --minify",
+    "dev": "eleventy --serve"
   },
   "devDependencies": {
-    "eslint-config-standard": "^14.1.1",
-    "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-standard": "^4.0.0"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "@11ty/eleventy": "^2.0.1",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
+  }
 }
