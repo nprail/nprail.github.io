@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "build": "eleventy && mkdir -p _site/assets/css && tailwindcss -i ./src/assets/css/main.css -o ./_site/assets/css/main.css --minify",
-    "dev": "eleventy --serve",
-    "download-images": "bash scripts/download-images.sh"
+    "dev": "eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",

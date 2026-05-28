@@ -33,9 +33,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Download images
-        run: bash scripts/download-images.sh
-
       - name: Build site
         run: npm run build
 
