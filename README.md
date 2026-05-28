@@ -1,4 +1,4 @@
-# NPrail.dev Website [![Build Status](https://travis-ci.org/nprail/nprail.github.io.svg?branch=dev)](https://travis-ci.org/nprail/nprail.github.io) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/standard/standard)
+# Noah Prail's Portfolio
 
 ## Bugs and Issues
 
@@ -10,4 +10,4 @@ Have a bug or an issue with this? [Open a new issue](https://github.com/nprail/n
 
 ## Copyright and License
 
-Copyright 2019 Noah Prail. Code released under the [MIT license](LICENSE).
+Copyright 2026 Noah Prail. Code released under the [MIT license](LICENSE).
