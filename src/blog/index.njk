@@ -10,7 +10,7 @@ title: Blog
     <article class="group">
       <a href="/blog/{{ post.slug }}/" class="flex gap-6 sm:gap-8 items-start">
         <div class="flex-shrink-0 w-32 sm:w-44 h-24 sm:h-28 overflow-hidden rounded-lg bg-neutral-900">
-          <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
+          <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="w-full h-full object-cover rounded-[inherit] opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500">
         </div>
         <div class="flex-1 min-w-0 py-1">
           <p class="text-xs text-neutral-500 mb-2 uppercase tracking-widest">{{ post.dateDisplay }}</p>

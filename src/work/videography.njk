@@ -15,7 +15,7 @@ title: Videography
     {% for video in videography %}
     <a href="{{ video.url }}" target="_blank" rel="noopener noreferrer" class="group block bg-neutral-900 rounded-lg overflow-hidden hover:bg-neutral-800/80 transition-colors">
       <div class="aspect-video overflow-hidden">
-        <img src="{{ video.thumbnail }}" alt="{{ video.title }}" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" loading="lazy">
+        <img src="{{ video.thumbnail }}" alt="{{ video.title }}" class="w-full h-full object-cover rounded-[inherit] opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" loading="lazy">
       </div>
       <div class="p-5">
         <h2 class="font-semibold mb-2 group-hover:text-neutral-200 transition-colors leading-snug">{{ video.title }}</h2>

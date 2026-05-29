@@ -12,10 +12,10 @@ title: Rockets
     <figure class="break-inside-avoid overflow-hidden rounded-lg">
       {% if rocket.link %}
       <a href="{{ rocket.link }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ rocket.url }}" alt="{{ rocket.alt }}" class="w-full hover:opacity-90 transition-opacity duration-300" loading="lazy">
+        <img src="{{ rocket.url }}" alt="{{ rocket.alt }}" class="block w-full rounded-[inherit] hover:opacity-90 transition-opacity duration-300" loading="lazy">
       </a>
       {% else %}
-      <img src="{{ rocket.url }}" alt="{{ rocket.alt }}" class="w-full" loading="lazy">
+      <img src="{{ rocket.url }}" alt="{{ rocket.alt }}" class="block w-full rounded-[inherit]" loading="lazy">
       {% endif %}
       {% if rocket.caption %}
       <figcaption class="mt-2 text-sm text-neutral-500 text-center px-2">{{ rocket.caption }}</figcaption>
