@@ -3,8 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ description or site.description }}">
+  {% set pageTitle = (title + ' | ' + site.title) if title else site.title %}
+  {% set pageDescription = description or site.description %}
+  {% set absoluteUrl = canonicalUrl or (site.url + page.url) %}
+  {% set ogType = 'article' if page.url and '/blog/' in page.url else 'website' %}
+  {% set twitterCardType = 'summary_large_image' if ogImage else 'summary' %}
+
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  <meta name="robots" content="{{ robots or 'index,follow' }}">
+  <link rel="canonical" href="{{ absoluteUrl }}">
+
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:type" content="{{ ogType }}">
+  <meta property="og:url" content="{{ absoluteUrl }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% if ogImage %}
+  <meta property="og:image" content="{{ ogImage }}">
+  {% endif %}
+
+  <meta name="twitter:card" content="{{ twitterCardType }}">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ pageDescription }}">
+  {% if ogImage %}
+  <meta name="twitter:image" content="{{ ogImage }}">
+  {% endif %}
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}",
+      "description": "{{ site.description }}"
+    }
+  </script>
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <!-- Fathom - beautiful, simple website analytics -->
@@ -50,7 +84,7 @@
         <a href="{{ social.stackoverflow }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-200 transition-colors">Stack Overflow</a>
         <a href="{{ social.medium }}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-200 transition-colors">Medium</a>
       </div>
-      <p class="text-xs text-neutral-600">&copy; 2025 Noah Prail</p>
+      <p class="text-xs text-neutral-600">&copy; 2026 Noah Prail</p>
     </div>
   </footer>
 </body>
