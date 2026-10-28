@@ -1,5 +1,7 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/assets/favicon");
+  eleventyConfig.addPassthroughCopy({ "src/assets/favicon/favicon.ico": "favicon.ico" });
   eleventyConfig.addCollection("sitemap", (collectionApi) => {
     return collectionApi
       .getFilteredByGlob("./src/**/*.njk")
