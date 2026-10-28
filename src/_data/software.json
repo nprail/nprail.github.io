@@ -1,0 +1,51 @@
+[
+  {
+    "name": "capacitor-stripe-terminal",
+    "description": "Capacitor plugin for Stripe Terminal, for accepting card payments with credit card readers.",
+    "language": "TypeScript",
+    "url": "https://github.com/eventOneHQ/capacitor-stripe-terminal",
+    "homepage": "https://oss.eventone.page/capacitor-stripe-terminal/",
+    "featured": true
+  },
+  {
+    "name": "kairos",
+    "description": "Trigger a camera based on scheduled times.",
+    "language": "Kotlin / Swift / ESP32",
+    "url": "https://github.com/nprail/kairos",
+    "featured": true
+  },
+  {
+    "name": "photo-distributor",
+    "description": "An FTP server that distributes photos to one or more destinations.",
+    "language": "JavaScript",
+    "url": "https://github.com/nprail/photo-distributor",
+    "featured": true
+  },
+  {
+    "name": "npm-audit-html",
+    "description": "Generate a HTML report for NPM Audit.",
+    "language": "JavaScript",
+    "url": "https://github.com/eventOneHQ/npm-audit-html",
+    "homepage": "https://oss.eventone.page/npm-audit-html/"
+  },
+  {
+    "name": "apkup",
+    "description": "Publish APKs to Google Play directly from the terminal.",
+    "language": "TypeScript",
+    "url": "https://github.com/eventOneHQ/apkup",
+    "homepage": "https://oss.eventone.page/apkup"
+  },
+  {
+    "name": "ha-lunch-money",
+    "description": "A Home Assistant integration for Lunch Money.",
+    "language": "Python",
+    "url": "https://github.com/nprail/ha-lunch-money"
+  },
+  {
+    "name": "havenos",
+    "description": "A fully local, touch-first smart display for Raspberry Pi.",
+    "language": "TypeScript",
+    "url": "https://github.com/nprail/havenos",
+    "experimental": true
+  }
+]

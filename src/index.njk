@@ -36,4 +36,17 @@ title: Home
       </div>
     </a>
   </div>
+
+  <a href="/work/software/" class="group w-full max-w-6xl mt-5 rounded-xl bg-neutral-900 border border-neutral-800/60 hover:border-neutral-600 transition-colors p-6 md:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-left">
+    <div>
+      <p class="text-xs uppercase tracking-[0.2em] text-neutral-400 mb-1.5">Work</p>
+      <h2 class="text-2xl font-semibold tracking-tight">Software</h2>
+      <span class="mt-3 inline-block text-xs uppercase tracking-widest text-neutral-400 group-hover:text-neutral-200 transition-colors">Explore open source &rarr;</span>
+    </div>
+    <ul class="flex flex-wrap gap-2 md:max-w-xl md:justify-end">
+      {% for project in software %}{% if project.featured %}
+      <li class="rounded-full border border-neutral-700 px-4 py-1.5 text-sm text-neutral-300 group-hover:border-neutral-500 transition-colors">{{ project.name }}</li>
+      {% endif %}{% endfor %}
+    </ul>
+  </a>
 </section>
